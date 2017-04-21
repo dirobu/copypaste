@@ -36,7 +36,7 @@ copypaste.object(model, str);
 		1: {'firstname': 'John','lastname': 'Dig', 'age': '41'},
 		3: {'firstname': 'Jane','lastname': 'Doe', 'age': '40'}
 	};
-	var str = copypaste.object('Have you seen |%firstname| |%lastname|, they are |%age| years old.', str);
+	var str = copypaste.object('Have you seen |%firstname| |%lastname|, they are |%age| years old.', object);
 	console.log(str);
 
 	Output: 
@@ -54,7 +54,7 @@ copypaste.objectOnly(key, only, model, str);
 		1: {'firstname': 'John','lastname': 'Dig', 'age': '41'},
 		3: {'firstname': 'Jane','lastname': 'Doe', 'age': '40'}
 	};
-	var str = copypaste.objectOnly('lastname','Doe','Have you seen |%firstname| |%lastname|, they are |%age| years old.', str);
+	var str = copypaste.objectOnly('lastname','Doe','Have you seen |%firstname| |%lastname|, they are |%age| years old.', object);
 	console.log(str);
 
 	Output: 
